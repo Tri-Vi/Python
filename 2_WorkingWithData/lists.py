@@ -86,4 +86,60 @@ def reverse(aList):
 print(reverse([1, 2, 3, 4]))
 print(reverse(reverse([1, 2, 3, 4])))
 
-# Problem 7: Python has built in functions **min** and **max** to compute minimum 
+# Problem 7: Python has built in functions **min** and **max** to compute minimum and maximum of a given list. Provide an implementation for these functions. What happens when you call your min and max functiosn with a list of strings?
+
+def mymin(aList):
+  minNum = aList[0]
+  for x in aList:
+    if minNum > x:
+      minNum = x
+  
+  return minNum
+
+print(mymin([5,2,3,4]))
+
+def mymax(aList):
+  maxNum = aList[0]
+  for x in aList:
+    if x > maxNum:
+      maxNum = x
+  return maxNum
+
+print(mymax([5,2,3,4]))
+
+# Problem 8: Cumulative sum of a list [a,b,c, ...] is defined as [a, a+b, a+b+c, ...]. Write a function cumulative_sum to compute cumulative sum of a list. Does your implementation work for a list of strings?
+
+def cumulative_sum(aList):
+  result = []
+  total = 0
+  for x in aList:
+    total += x
+    result.append(total)
+  return result
+
+print(cumulative_sum([1, 2, 3, 4]))
+print(cumulative_sum([4, 3, 2, 1]))
+
+# Problem 9: Write a function cumulative_product to copute cumulative product of a list of numbers
+
+def cumulative_product(aList):
+  result = []
+  total = 1
+  for x in aList:
+    total *= x
+    result.append(total)
+  return result
+
+print(cumulative_product([1, 2, 3, 4]))
+print(cumulative_product([4, 3, 2, 1]))
+
+# Problem 10: Write a function unique to find all the unique element of a list
+def unique(aList):
+  uniqueArray = []
+  sortedList = sortedList(aList)
+  sortedListLen = len(sortedList)
+  previousValue = sortedList[0]
+  while 
+
+
+  
