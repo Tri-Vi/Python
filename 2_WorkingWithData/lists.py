@@ -135,11 +135,29 @@ print(cumulative_product([4, 3, 2, 1]))
 
 # Problem 10: Write a function unique to find all the unique element of a list
 def unique(aList):
-  uniqueArray = []
-  sortedList = sortedList(aList)
-  sortedListLen = len(sortedList)
-  previousValue = sortedList[0]
-  while 
-
-
+  unique_list = []
+  for x in aList:
+    if x not in unique_list:
+      unique_list.append(x)
   
+  return unique_list
+
+print(unique([1, 2, 1, 3, 2, 5]))
+
+# Problem 11: Write a function dups to find all duplicates in the list
+
+def dups(aList):
+  unique_list = unique(aList)
+  dup_list = []
+  for x in aList:
+    if x in unique_list:
+      print(x) 
+
+print(dups([1, 2, 1, 3, 2, 5]))
+
+   
+
+
+
+
+
